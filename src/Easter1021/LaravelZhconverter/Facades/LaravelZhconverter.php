@@ -1,4 +1,4 @@
-<?php namespace Seta0909\LaravelZhconverter\Facades;
+<?php namespace Easter1021\LaravelZhconverter\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

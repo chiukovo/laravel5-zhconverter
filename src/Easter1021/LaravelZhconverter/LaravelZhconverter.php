@@ -1,5 +1,5 @@
 <?php
-    namespace Seta0909\LaravelZhconverter;
+    namespace Easter1021\LaravelZhconverter;
 
     /**
      * Created by PhpStorm.

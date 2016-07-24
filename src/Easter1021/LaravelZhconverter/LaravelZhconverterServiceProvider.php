@@ -19,7 +19,7 @@ class LaravelZhconverterServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('seta0909/laravel-zhconverter');
+        $this->package('easter1021/laravel-zhconverter');
     }
 
     /**
@@ -34,7 +34,7 @@ class LaravelZhconverterServiceProvider extends ServiceProvider
         });
         $this->app->booting(function () {
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('ZhConvert', 'Seta0909\LaravelZhconverter\Facades\LaravelZhconverter');
+            $loader->alias('ZhConvert', 'Easter1021\LaravelZhconverter\Facades\LaravelZhconverter');
         });
     }
 
