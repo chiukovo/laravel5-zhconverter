@@ -3,9 +3,9 @@ Laravel 繁簡轉換
 
 # 安裝方式
 
-1. 在 composer.json中加入 "seta0909/laravel-zhconverter": "*"
+1. 在 composer.json中加入 "easter1021/laravel-zhconverter": "*"
 2. composer update
-3. 在 config/app.php 中加入 'Seta0909\LaravelZhconverter\LaravelZhconverterServiceProvider'
+3. 在 config/app.php 中加入 'Easter1021\LaravelZhconverter\LaravelZhconverterServiceProvider'
 
 # 使用方式
 
