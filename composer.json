@@ -2,7 +2,7 @@
     "name": "easter1021/laravel5-zhconverter",
     "description": "Laravel 5 繁簡轉換",
     "license": "MIT",
-    "version": "0.0.2",
+    "version": "5.0.0",
     "authors": [
         {
             "name": "easter1021",
