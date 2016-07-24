@@ -1,4 +1,4 @@
-<?php namespace Seta0909\LaravelZhconverter;
+<?php namespace Easter1021\LaravelZhconverter;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -19,7 +19,7 @@ class LaravelZhconverterServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('easter1021/laravel-zhconverter');
+
     }
 
     /**
@@ -29,12 +29,8 @@ class LaravelZhconverterServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['ZhConvert'] = $this->app->share(function ($app) {
+        $this->app->singleton(LaravelZhconverter::class, function ($app) {
             return new LaravelZhconverter;
-        });
-        $this->app->booting(function () {
-            $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('ZhConvert', 'Easter1021\LaravelZhconverter\Facades\LaravelZhconverter');
         });
     }
 
@@ -45,7 +41,7 @@ class LaravelZhconverterServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('ZhConvert');
+        return [LaravelZhconverter::class];
     }
 
 }
